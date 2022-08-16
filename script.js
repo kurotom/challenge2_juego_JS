@@ -140,8 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let index = 0;
     arrayWord.forEach((item, posicion) => {
     // arrayWord.forEach(item => {
-      let span = document.createElement('div');
-      span.setAttribute('class', 'answerDiv');
+      let span = document.createElement("div");
+      span.setAttribute("class", "answerDiv");
 
       // if (item === ' ') {
       //   span.innerHTML = `<input class="answer" type="text" name="${index}" maxlength="1" autofocus>`;
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
     lapiz.strokeStyle = 'black';
     lapiz.lineWidth = 2;
 
-    // console.log(vida)
+    // console.log(vida) 
     let palabraResponse = document.getElementById('respuesta');
 
     let respuestas = document.querySelectorAll('.answer');
@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let teclaPresionada = inputResponse.value;
         // console.log(teclaPresionada)
 
-        if (Object.keys(keyCodesWord).includes(teclaPresionada)) {
+        if (Object.keys(keyCodesWord).includes(teclaPresionada.toLowerCase())) {
 
           teclaPresionada = teclaPresionada.toUpperCase();
 
